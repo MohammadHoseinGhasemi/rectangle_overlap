@@ -14,11 +14,11 @@
 ## About
 
 I used these languages ​​to configure this application as much as I could.
-`css` and `js` for use by users and `node.js` for its backend and server side. 
+`css` and `Js` for use by users and `Node.js` for its backend and server side. 
 The structure used in this program is `MVC` structure.
-I used `system routing` for clean coding and faster access, as well as for easy configuration.
-I used `comments` as much as I could to make editing inside the codes easier as well as readability and access.
-I also used `ejs view engine` to use dynamic code inside `html`
+I used `System Routing` for clean coding and faster access, as well as for easy configuration.
+I used `Comments` as much as I could to make editing inside the codes easier as well as readability and access.
+I also used `Ejs View Engine` to use dynamic code inside `Html`
 
 
 ## Packages
@@ -64,7 +64,7 @@ Using a function called `rectOverLap`, this program calculates the commonality o
 ![image](overlap.png)
 
 ## Database
-I have chosen the `mogodb` database for this project and have included a section to put your own database configuration
+I have chosen the `mongoDB` database for this project and have included a section to put your own database configuration
 
 ![cfg](database.png)
 
