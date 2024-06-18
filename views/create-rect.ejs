@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="button.css">
+    <title>Main Page</title>
+  </head>
+
+  <body>
+    <%- include('../partials/header.ejs') %>
+
+      <div class="form-detail">
+        <form action="/" class="form" method="post">
+          <div class="info">
+            <span class="title">Main</span>
+            <p class="description">Enter Main Rectangle Coordinates</p>
+          </div>
+          <div class="input-fields">
+
+
+            <label for="main-x"></label>
+            <input placeholder="X" id="main-x" name="main[x]" type="number" maxlength="2" required>
+
+
+            <label for="main-y"></label>
+            <input placeholder="Y" id="main-y" name="main[y]" type="number" maxlength="2" required>
+
+
+            <label for="main-width"></label>
+            <input placeholder="W" id="main-width" name="main[width]" type="number" maxlength="2" required>
+
+            <label for="main-height"></label>
+            <input placeholder="H" id="main-height" name="main[height]" type="number" maxlength="2" required>
+
+
+          </div>
+
+          <div class="info">
+            <span class="title">OverLap</span>
+            <p class="description">Enter Overlap Rectangle Coordinates</p>
+          </div>
+          <div class="input-fields">
+            <div id="input-rectangles">
+
+              <label for="input-x-0"></label>
+              <input placeholder="X" id="input-x-0" name="input[0][x]" type="number" maxlength="2" required>
+
+
+              <label for="input-y-0"></label>
+              <input placeholder="Y" id="input-y-0" name="input[0][y]" type="number" maxlength="2" required>
+
+
+              <label for="input-width-0"></label>
+              <input placeholder="W" id="input-width-0" name="input[0][width]" type="number" maxlength="2" required>
+
+
+              <label for="input-height-0"></label>
+              <input placeholder="H" id="input-height-0" name="input[0][height]" type="number" maxlength="2" required>
+
+            </div>
+          </div>
+
+          <div class="action-btns">
+            <button type="submit" class="ui-btn">
+              <span>
+                Save
+              </span>
+            </button>
+          </div>
+
+
+          <div class="action-btns">
+            <button type="button" onclick="addInputRect()" class="ui-btn">
+              <span>
+                Add More Rectangle
+              </span>
+            </button>
+          </div>
+        </form>
+      </div>
+      <script src="input.js"></script>
+
+  </body>
+
+</html>

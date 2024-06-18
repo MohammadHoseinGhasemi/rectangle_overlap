@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="try-again.css">
+    <title>
+      <%= title %>
+    </title>
+  </head>
+
+  <body>
+    <%- include('../partials/header.ejs') %>
+
+      <% if(rects.length> 0){ %>
+        <h2>
+          <ul>
+            <% rects.forEach(rect=> { %>
+              <div class="list-card">
+                <li>X: <%= rect.x %>
+                </li>
+                <li> Y: <%= rect.y %>
+                </li>
+                <li>Width: <%= rect.width %>
+                </li>
+                <li>Height: <%= rect.height %>
+                </li>
+                <li>Time: <%= rect.time %>
+                </li>
+              </div>
+              <% }); %>
+                <% } else { %>
+                  <div class="title">
+                    <a class="btn-shine">Please Create Rectangle</a>
+                  </div>
+                  <% } %>
+          </ul>
+        </h2>
+  </body>
+</html>
